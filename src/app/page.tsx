@@ -7,20 +7,27 @@ export default function Home() {
   const { count, inc, dec, removeAllCount } = useCountStore();
 
   return (
-    <div>
-      <h1>haha</h1>
-      <span>{count}</span>
-      <button type="button" onClick={inc}>
-        one up
-      </button>
-      <button type="button" onClick={dec}>
-        one down
-      </button>
-      <button type="button" onClick={removeAllCount}>
-        Reset
-      </button>
-      <div className={styles.page}>page</div>
-      <div className={styles.text}>Tet</div>
+    <div className={styles.mainContainer}>
+      <div className={styles.header}>Header</div>
+
+      <div className={styles.columns}>
+        <nav className={styles.nav}>
+          <span>{count}</span>
+        </nav>
+        <div className={styles.mainContent}>
+          <button type="button" onClick={inc}>
+            one up
+          </button>
+          <button type="button" onClick={dec}>
+            one down
+          </button>
+          <button type="button" onClick={removeAllCount}>
+            Reset
+          </button>
+        </div>
+        <div className={styles.aside}>SideBar</div>
+      </div>
+      <div className={styles.footer}>Footer</div>
     </div>
   );
 }
