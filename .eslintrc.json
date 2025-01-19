@@ -46,7 +46,7 @@
       { "namedComponents": ["arrow-function", "function-declaration"] }
     ],
     "sort-imports": [
-      "error",
+      "warn",
       {
         "ignoreCase": false,
         "ignoreDeclarationSort": false,
