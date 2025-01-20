@@ -22,8 +22,7 @@ export default function Home() {
 
       <div className={styles.columns}>
         <nav className={styles.nav}>
-          <span>{count}</span>
-
+     
         </nav>
         <div className={styles.mainContent}>
           <div className={styles.mainLogo}>
@@ -39,15 +38,7 @@ export default function Home() {
               <FcEnteringHeavenAlive/>
             </div>
           </div>
-          <button type="button" onClick={inc}>
-            one up
-          </button>
-          <button type="button" onClick={dec}>
-            one down
-          </button>
-          <button type="button" onClick={removeAllCount}>
-            Reset
-          </button>
+          
         </div>
         <div className={styles.aside}>SideBar</div>
       </div>

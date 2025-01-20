@@ -1,6 +1,10 @@
 // components/Header.css.ts
 import { style } from '@vanilla-extract/css';
 
+const breakpoints = {
+  mobile: 'screen and (max-width: 768px)',
+}
+
 export const headerStyles = style({
   backgroundColor: '#FFFFFF',
   color: '#000000',
@@ -10,6 +14,11 @@ export const headerStyles = style({
   alignItems: 'center',
   fontFamily: 'Arial, sans-serif',
   position: 'relative',
+  '@media' : {
+    [breakpoints.mobile]: {
+      display:'none',
+    }
+  }
 });
 
 export const logoStyles = style({

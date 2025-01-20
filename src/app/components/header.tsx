@@ -29,15 +29,6 @@ export default function Header() {
         <span />
       </button>
       <nav className={`${navStyles} ${menuOpen ? mobileMenuStyles : ''}`}>
-        <a href="/about" className={linkStyles}>
-          About
-        </a>
-        <a href="/features" className={linkStyles}>
-          Features
-        </a>
-        <a href="/pricing" className={linkStyles}>
-          Pricing
-        </a>
         <a href="/contact" className={linkStyles}>
           Contact
         </a>
